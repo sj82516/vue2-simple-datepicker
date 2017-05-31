@@ -8,8 +8,7 @@ describe('Hello.vue', () => {
         expect(vm.$el.querySelector('.hello h1').textContent)
             .to.equal('Welcome to Your Vue.js App');
     });
-    it('it should failed', ()=> {
-        "use strict";
-        assert.equal(3, [1, 2, 3].indexOf(5));
-    })
+    it('now should pass', () => {
+        expect([1, 2, 3].indexOf(5)).to.equal(-1);
+    });
 });
